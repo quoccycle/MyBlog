@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://quoccycle.com/2018/09/ni%E1%BB%81m-tin-v%C3%A0o-cu%E1%BB%99c-s%E1%BB%91ng-sau-khi-xem-xong-video-n%C3%A0y/</loc>
+    <lastmod>2018-09-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://quoccycle.com/2018/09/t%E1%BA%A1i-sao-l%C3%A0-quoc-cycle/</loc>
     <lastmod>2018-09-02T00:00:00+00:00</lastmod>
   </url>
@@ -17,13 +22,31 @@
   </url>
   
   <url>
+    <loc>http://quoccycle.com/tags/cuocsong/</loc>
+    <lastmod>2018-09-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://quoccycle.com/tags/nghetienganh/</loc>
+    <lastmod>2018-09-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://quoccycle.com/page/</loc>
     <priority>0</priority>
   </url>
   
   <url>
+    <loc>http://quoccycle.com/tags/phattrienbanthan/</loc>
+    <lastmod>2018-09-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://quoccycle.com/post/</loc>
-    <lastmod>2018-09-02T00:00:00+00:00</lastmod>
+    <lastmod>2018-09-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -33,12 +56,13 @@
   
   <url>
     <loc>http://quoccycle.com/</loc>
-    <lastmod>2018-09-02T00:00:00+00:00</lastmod>
+    <lastmod>2018-09-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://quoccycle.com/tags/</loc>
+    <lastmod>2018-09-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

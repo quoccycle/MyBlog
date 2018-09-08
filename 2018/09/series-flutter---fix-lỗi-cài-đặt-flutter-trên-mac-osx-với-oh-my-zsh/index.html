@@ -5,17 +5,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>Tại sao là Quoc Cycle</title>
-  <meta property="og:title" content="Tại sao là Quoc Cycle" />
-  <meta name="twitter:title" content="Tại sao là Quoc Cycle" />
-  <meta name="description" content="Rất cảm ơn các bạn đã ghé thăm blog của mình!
-Mở màn cho hàng loạt bài viết sau này với mục đích giúp chính mình thành công cũng như hy vọng giúp những bạn đọc có thể gặp trường hợp giống mình có thể dễ dàng vượt qua như mình hoặc có thể làm tốt hơn những gì mình đã làm!
-Ô ke! như tiêu đề Quoc Cycle ở đây nghĩa đen thì Quoc là tên mình còn Cycle là biệt danh của mình!">
-  <meta property="og:description" content="Rất cảm ơn các bạn đã ghé thăm blog của mình!
-Mở màn cho hàng loạt bài viết sau này với mục đích giúp chính mình thành công cũng như hy vọng giúp những bạn đọc có thể gặp trường hợp giống mình có thể dễ dàng vượt qua như mình hoặc có thể làm tốt hơn những gì mình đã làm!
-Ô ke! như tiêu đề Quoc Cycle ở đây nghĩa đen thì Quoc là tên mình còn Cycle là biệt danh của mình!">
-  <meta name="twitter:description" content="Rất cảm ơn các bạn đã ghé thăm blog của mình!
-Mở màn cho hàng loạt bài viết sau này với mục đích giúp chính mình thành công cũng như hy vọng giúp những bạn đọc có thể gặp trường hợp giống mình có thể …">
+  <title>Series Flutter - Fix lỗi cài đặt Flutter trên Mac OSX với &#34;Oh my zsh!&#34;</title>
+  <meta property="og:title" content="Series Flutter - Fix lỗi cài đặt Flutter trên Mac OSX với &#34;Oh my zsh!&#34;" />
+  <meta name="twitter:title" content="Series Flutter - Fix lỗi cài đặt Flutter trên Mac OSX với &#34;Oh my zsh!&#34;" />
+  <meta name="description" content="Xin chào các bạn! Cùng với sự phát triển công nghệ không ngừng thì những thằng DEV như chúng ta đều có tham vọng dùng 1 ngôn ngữ để build đa nền tảng và ngoài cái tên rất hot vừa rồi là React Native của facebook đang làm mưa làm gió thì nay Google cũng tung ra 1 nền tảng mới mang tên Flutter. Không nói vòng vo mình hy vọng chuỗi bài viêt này có thể giúp bạn tiếp cận một cách đơn giản nhất, nhanh nhất với nền tảng mới này!">
+  <meta property="og:description" content="Xin chào các bạn! Cùng với sự phát triển công nghệ không ngừng thì những thằng DEV như chúng ta đều có tham vọng dùng 1 ngôn ngữ để build đa nền tảng và ngoài cái tên rất hot vừa rồi là React Native của facebook đang làm mưa làm gió thì nay Google cũng tung ra 1 nền tảng mới mang tên Flutter. Không nói vòng vo mình hy vọng chuỗi bài viêt này có thể giúp bạn tiếp cận một cách đơn giản nhất, nhanh nhất với nền tảng mới này!">
+  <meta name="twitter:description" content="Xin chào các bạn! Cùng với sự phát triển công nghệ không ngừng thì những thằng DEV như chúng ta đều có tham vọng dùng 1 ngôn ngữ để build đa nền tảng và ngoài cái tên rất hot vừa rồi là React Native …">
   <meta name="author" content="Quoc Cycle"/>
   <link href='http://quoccycle.com/img/my_logo.png' rel='icon' type='image/x-icon'/>
   <meta property="og:image" content="http://quoccycle.com/img/my_logo.png" />
@@ -23,12 +18,12 @@ Mở màn cho hàng loạt bài viết sau này với mục đích giúp chính 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@username" />
   <meta name="twitter:creator" content="@username" />
-  <meta property="og:url" content="http://quoccycle.com/2018/09/t%E1%BA%A1i-sao-l%C3%A0-quoc-cycle/" />
+  <meta property="og:url" content="http://quoccycle.com/2018/09/series-flutter---fix-l%E1%BB%97i-c%C3%A0i-%C4%91%E1%BA%B7t-flutter-tr%C3%AAn-mac-osx-v%E1%BB%9Bi-oh-my-zsh/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Quoc Cycle Blog | The full stack deverloper" />
 
   <meta name="generator" content="Hugo 0.47.1" />
-  <link rel="canonical" href="http://quoccycle.com/2018/09/t%E1%BA%A1i-sao-l%C3%A0-quoc-cycle/" />
+  <link rel="canonical" href="http://quoccycle.com/2018/09/series-flutter---fix-l%E1%BB%97i-c%C3%A0i-%C4%91%E1%BA%B7t-flutter-tr%C3%AAn-mac-osx-v%E1%BB%9Bi-oh-my-zsh/" />
   <link rel="alternate" href="http://quoccycle.com/index.xml" type="application/rss+xml" title="Quoc Cycle Blog | The full stack deverloper">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -171,17 +166,17 @@ if (!doNotTrack) {
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="post-heading">
-              <h1>Tại sao là Quoc Cycle</h1>
+              <h1>Series Flutter - Fix lỗi cài đặt Flutter trên Mac OSX với &#34;Oh my zsh!&#34;</h1>
                 
                 
                   <span class="post-meta">
   
   
-  <i class="fa fa-calendar-o"></i>&nbsp;Posted on September 2, 2018
+  <i class="fa fa-calendar-o"></i>&nbsp;Posted on September 8, 2018
   
   
   &nbsp;|&nbsp;
-  <i class="fa fa-clock-o"></i> 1 minutes (197 words)
+  <i class="fa fa-clock-o"></i> 2 minutes (252 words)
   
   
 </span>
@@ -204,17 +199,73 @@ if (!doNotTrack) {
           
           <div class="blog-tags">
             
-              <a href="http://quoccycle.com/tags/tamsu/">tamsu</a>&nbsp;
+              <a href="http://quoccycle.com/tags/flutter/">flutter</a>&nbsp;
+            
+              <a href="http://quoccycle.com/tags/android/">android</a>&nbsp;
+            
+              <a href="http://quoccycle.com/tags/ios/">ios</a>&nbsp;
             
           </div>
         
         
-        <p>Rất cảm ơn các bạn đã ghé thăm blog của mình!</p>
+        <p>Xin chào các bạn! Cùng với sự phát triển công nghệ không ngừng thì những thằng DEV như chúng ta đều có tham vọng dùng 1 ngôn ngữ để build đa nền tảng và ngoài cái tên rất hot vừa rồi là <strong><a href="https://facebook.github.io/react-native/">React Native</a></strong> của <strong>facebook</strong> đang làm mưa làm gió thì nay <strong>Google</strong> cũng tung ra 1 nền tảng mới mang tên <strong><a href="https://flutter.io/">Flutter</a></strong>. Không nói vòng vo mình hy vọng chuỗi bài viêt này có thể giúp bạn tiếp cận một cách <em><strong>đơn giản nhất, nhanh nhất</strong></em> với nền tảng mới này!</p>
 
-<p>Mở màn cho hàng loạt bài viết sau này với mục đích giúp chính mình thành công cũng như hy vọng giúp những bạn đọc có thể gặp trường hợp giống mình có thể dễ dàng vượt qua như mình hoặc có thể làm tốt hơn những gì mình đã làm!</p>
+<p>Như tiêu đề bài này khá ngắn gọn là chỉ cách cài đặt môi trường.</p>
 
-<p>Ô ke! như tiêu đề <strong>Quoc Cycle</strong> ở đây nghĩa đen thì <strong>Quoc</strong> là tên mình còn <strong>Cycle</strong> là biệt danh của mình!
-Nghĩa bóng thì tập trung chủ yếu chữ <strong>Cycle</strong> ai cũng dễ dàng hiểu nó là <em>chu trình, vòng đời, vòng tròn&hellip;</em> vâng đúng rồi nhưng ở đây mình mong muốn mọi người hiểu rằng đây chính là <strong>vòng luân hồi</strong> về cuộc sống về tất cả những gì mình thấy, chạm, sờ &hellip; được trong cuộc đời mình! Nó không có bắt đầu cũng như kết thúc! Nói đơn giản Vòng luân hồi còn quay ta còn sống hết quay thì không còn gì nữa! Mình chọn nó vì mình muốn nhắc chính bản thân mình rằng không chỉ việc học mà tất cả việc trên đời đều giống như thế!</p>
+<p>Các bạn có thể dễ dàng cài đặt thông qua hướng dẫn từ trang chủ của flutter <a href="https://flutter.io/setup-macos/#run-flutter-doctor">tại đây</a></p>
+
+<p>Nhưng có 1 vấn đề nếu bạn đang làm việc với <em><strong><a href="https://ohmyz.sh/">Oh my zsh</a></strong></em> thì sinh ra 1 vấn đề là:</p>
+<div class="highlight"><pre class="chroma">➜  ~ flutter doctor
+zsh: command not found: flutter</pre></div>
+<p>Cách giải quyết đơn giản dưới đây là:</p>
+
+<ul>
+<li>B1: Chỉnh sửa file <strong>.bash_profile</strong>
+
+<ul>
+<li>Open file bằng lệnh sau trên terminal <code>sudo nano .bash_profile</code></li>
+<li>Lưu ý nhỏ ở đây bạn cần lấy đúng đường dẫn <strong>flutter/bin</strong> mà bạn đã lưu trên máy tính của mình!</li>
+</ul></li>
+</ul>
+
+
+<link rel="stylesheet" href="/css/hugo-easy-gallery.css" />
+<div class="box fancy-figure caption-position-bottom caption-effect-appear" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img">
+      <img itemprop="thumbnail" src="/img/p3/bash_profile_nano_flutter_sdk.png" alt="file .bash_profile"/>
+    </div>
+    <a href="/img/p3/bash_profile_nano_flutter_sdk.png" itemprop="contentUrl"></a>
+      <figcaption>
+          <p>file .bash_profile</p>
+      </figcaption>
+  </figure>
+</div>
+
+
+<ul>
+<li>B2: Tiếp tục chạy 2 lệnh sau trên terminal</li>
+</ul>
+<div class="highlight"><pre class="chroma">➜  ~ source $HOME/.bash_profile
+➜  ~ echo $PATH</pre></div>
+<p>Cuối cùng ta chạy lệnh <code>flutter docter</code> bình thường.</p>
+
+
+
+<div class="box fancy-figure caption-position-bottom caption-effect-appear" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img">
+      <img itemprop="thumbnail" src="/img/p3/flutter_doctor_output_terminal.png" alt="kết quả sau khi cài đặt!"/>
+    </div>
+    <a href="/img/p3/flutter_doctor_output_terminal.png" itemprop="contentUrl"></a>
+      <figcaption>
+          <p>kết quả sau khi cài đặt!</p>
+      </figcaption>
+  </figure>
+</div>
+
+
+<p><em>Nếu có thắc mắc gì vui lòng comment bên dưới để mình có thể hỗ trợ bạn!</em></p>
 
 
         
@@ -225,7 +276,7 @@ Nghĩa bóng thì tập trung chủ yếu chữ <strong>Cycle</strong> ai cũng 
 
 
 <li>
-    <a href="//twitter.com/share?url=http%3a%2f%2fquoccycle.com%2f2018%2f09%2ft%25E1%25BA%25A1i-sao-l%25C3%25A0-quoc-cycle%2f&amp;text=T%e1%ba%a1i%20sao%20l%c3%a0%20Quoc%20Cycle&amp;via=username"
+    <a href="//twitter.com/share?url=http%3a%2f%2fquoccycle.com%2f2018%2f09%2fseries-flutter---fix-l%25E1%25BB%2597i-c%25C3%25A0i-%25C4%2591%25E1%25BA%25B7t-flutter-tr%25C3%25AAn-mac-osx-v%25E1%25BB%259Bi-oh-my-zsh%2f&amp;text=Series%20Flutter%20-%20Fix%20l%e1%bb%97i%20c%c3%a0i%20%c4%91%e1%ba%b7t%20Flutter%20tr%c3%aan%20Mac%20OSX%20v%e1%bb%9bi%20%22Oh%20my%20zsh%21%22&amp;via=username"
        target="_blank" alt="" title="Share on Twitter">
         <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
@@ -236,7 +287,7 @@ Nghĩa bóng thì tập trung chủ yếu chữ <strong>Cycle</strong> ai cũng 
 
 
 <li>
-    <a href="//plus.google.com/share?url=http%3a%2f%2fquoccycle.com%2f2018%2f09%2ft%25E1%25BA%25A1i-sao-l%25C3%25A0-quoc-cycle%2f" target="_blank" title="Share on Google Plus">
+    <a href="//plus.google.com/share?url=http%3a%2f%2fquoccycle.com%2f2018%2f09%2fseries-flutter---fix-l%25E1%25BB%2597i-c%25C3%25A0i-%25C4%2591%25E1%25BA%25B7t-flutter-tr%25C3%25AAn-mac-osx-v%25E1%25BB%259Bi-oh-my-zsh%2f" target="_blank" title="Share on Google Plus">
          <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
@@ -246,7 +297,7 @@ Nghĩa bóng thì tập trung chủ yếu chữ <strong>Cycle</strong> ai cũng 
 
 
 <li>
-    <a href="//www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fquoccycle.com%2f2018%2f09%2ft%25E1%25BA%25A1i-sao-l%25C3%25A0-quoc-cycle%2f" target="_blank" title="Share on Facebook">
+    <a href="//www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fquoccycle.com%2f2018%2f09%2fseries-flutter---fix-l%25E1%25BB%2597i-c%25C3%25A0i-%25C4%2591%25E1%25BA%25B7t-flutter-tr%25C3%25AAn-mac-osx-v%25E1%25BB%259Bi-oh-my-zsh%2f" target="_blank" title="Share on Facebook">
         <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
@@ -256,7 +307,7 @@ Nghĩa bóng thì tập trung chủ yếu chữ <strong>Cycle</strong> ai cũng 
 
 
 <li>
-    <a href="//reddit.com/submit?url=http%3a%2f%2fquoccycle.com%2f2018%2f09%2ft%25E1%25BA%25A1i-sao-l%25C3%25A0-quoc-cycle%2f&amp;title=T%e1%ba%a1i%20sao%20l%c3%a0%20Quoc%20Cycle" target="_blank" title="Share on Reddit">
+    <a href="//reddit.com/submit?url=http%3a%2f%2fquoccycle.com%2f2018%2f09%2fseries-flutter---fix-l%25E1%25BB%2597i-c%25C3%25A0i-%25C4%2591%25E1%25BA%25B7t-flutter-tr%25C3%25AAn-mac-osx-v%25E1%25BB%259Bi-oh-my-zsh%2f&amp;title=Series%20Flutter%20-%20Fix%20l%e1%bb%97i%20c%c3%a0i%20%c4%91%e1%ba%b7t%20Flutter%20tr%c3%aan%20Mac%20OSX%20v%e1%bb%9bi%20%22Oh%20my%20zsh%21%22" target="_blank" title="Share on Reddit">
          <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-reddit fa-stack-1x fa-inverse"></i>
@@ -266,7 +317,7 @@ Nghĩa bóng thì tập trung chủ yếu chữ <strong>Cycle</strong> ai cũng 
 
 
 <li>
-    <a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2fquoccycle.com%2f2018%2f09%2ft%25E1%25BA%25A1i-sao-l%25C3%25A0-quoc-cycle%2f&amp;title=T%e1%ba%a1i%20sao%20l%c3%a0%20Quoc%20Cycle" target="_blank"
+    <a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2fquoccycle.com%2f2018%2f09%2fseries-flutter---fix-l%25E1%25BB%2597i-c%25C3%25A0i-%25C4%2591%25E1%25BA%25B7t-flutter-tr%25C3%25AAn-mac-osx-v%25E1%25BB%259Bi-oh-my-zsh%2f&amp;title=Series%20Flutter%20-%20Fix%20l%e1%bb%97i%20c%c3%a0i%20%c4%91%e1%ba%b7t%20Flutter%20tr%c3%aan%20Mac%20OSX%20v%e1%bb%9bi%20%22Oh%20my%20zsh%21%22" target="_blank"
        title="Share on LinkedIn">
          <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
@@ -277,7 +328,7 @@ Nghĩa bóng thì tập trung chủ yếu chữ <strong>Cycle</strong> ai cũng 
 
 
 <li>
-    <a href="//www.pinterest.com/pin/create/button/?url=http%3a%2f%2fquoccycle.com%2f2018%2f09%2ft%25E1%25BA%25A1i-sao-l%25C3%25A0-quoc-cycle%2f&amp;description=T%e1%ba%a1i%20sao%20l%c3%a0%20Quoc%20Cycle" target="_blank"
+    <a href="//www.pinterest.com/pin/create/button/?url=http%3a%2f%2fquoccycle.com%2f2018%2f09%2fseries-flutter---fix-l%25E1%25BB%2597i-c%25C3%25A0i-%25C4%2591%25E1%25BA%25B7t-flutter-tr%25C3%25AAn-mac-osx-v%25E1%25BB%259Bi-oh-my-zsh%2f&amp;description=Series%20Flutter%20-%20Fix%20l%e1%bb%97i%20c%c3%a0i%20%c4%91%e1%ba%b7t%20Flutter%20tr%c3%aan%20Mac%20OSX%20v%e1%bb%9bi%20%22Oh%20my%20zsh%21%22" target="_blank"
        title="Share on Pinterest">
          <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
@@ -294,10 +345,10 @@ Nghĩa bóng thì tập trung chủ yếu chữ <strong>Cycle</strong> ai cũng 
       
         <ul class="pager blog-pager">
           
-          
-            <li class="next">
-              <a href="http://quoccycle.com/2018/09/ni%E1%BB%81m-tin-v%C3%A0o-cu%E1%BB%99c-s%E1%BB%91ng-sau-khi-xem-xong-video-n%C3%A0y/" data-toggle="tooltip" data-placement="top" title="Niềm tin vào cuộc sống sau khi xem xong video này">Next Post &rarr;</a>
+            <li class="previous">
+              <a href="http://quoccycle.com/2018/09/ni%E1%BB%81m-tin-v%C3%A0o-cu%E1%BB%99c-s%E1%BB%91ng-sau-khi-xem-xong-video-n%C3%A0y/" data-toggle="tooltip" data-placement="top" title="Niềm tin vào cuộc sống sau khi xem xong video này">&larr; Previous Post</a>
             </li>
+          
           
         </ul>
       

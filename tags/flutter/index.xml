@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Flutter on Quoc Cycle Blog | The full stack deverloper</title>
+    <link>http://quoccycle.com/tags/flutter/</link>
+    <description>Recent content in Flutter on Quoc Cycle Blog | The full stack deverloper</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>quoc.cycle@gmail.com (Quoc Cycle)</managingEditor>
+    <webMaster>quoc.cycle@gmail.com (Quoc Cycle)</webMaster>
+    <lastBuildDate>Sat, 08 Sep 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://quoccycle.com/tags/flutter/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Series Flutter - Fix lỗi cài đặt Flutter trên Mac OSX với &#34;Oh my zsh!&#34;</title>
+      <link>http://quoccycle.com/2018/09/series-flutter---fix-l%E1%BB%97i-c%C3%A0i-%C4%91%E1%BA%B7t-flutter-tr%C3%AAn-mac-osx-v%E1%BB%9Bi-oh-my-zsh/</link>
+      <pubDate>Sat, 08 Sep 2018 00:00:00 +0000</pubDate>
+      <author>quoc.cycle@gmail.com (Quoc Cycle)</author>
+      <guid>http://quoccycle.com/2018/09/series-flutter---fix-l%E1%BB%97i-c%C3%A0i-%C4%91%E1%BA%B7t-flutter-tr%C3%AAn-mac-osx-v%E1%BB%9Bi-oh-my-zsh/</guid>
+      <description>Xin chào các bạn! Cùng với sự phát triển công nghệ không ngừng thì những thằng DEV như chúng ta đều có tham vọng dùng 1 ngôn ngữ để build đa nền tảng và ngoài cái tên rất hot vừa rồi là React Native của facebook đang làm mưa làm gió thì nay Google cũng tung ra 1 nền tảng mới mang tên Flutter. Không nói vòng vo mình hy vọng chuỗi bài viêt này có thể giúp bạn tiếp cận một cách đơn giản nhất, nhanh nhất với nền tảng mới này!</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>quoc.cycle@gmail.com (Quoc Cycle)</managingEditor>
     <webMaster>quoc.cycle@gmail.com (Quoc Cycle)</webMaster>
-    <lastBuildDate>Thu, 06 Sep 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 08 Sep 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://quoccycle.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Android</title>
+      <link>http://quoccycle.com/tags/android/</link>
+      <pubDate>Sat, 08 Sep 2018 00:00:00 +0000</pubDate>
+      <author>quoc.cycle@gmail.com (Quoc Cycle)</author>
+      <guid>http://quoccycle.com/tags/android/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Cuocsong</title>
@@ -18,6 +27,24 @@
       <pubDate>Thu, 06 Sep 2018 00:00:00 +0000</pubDate>
       <author>quoc.cycle@gmail.com (Quoc Cycle)</author>
       <guid>http://quoccycle.com/tags/cuocsong/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Flutter</title>
+      <link>http://quoccycle.com/tags/flutter/</link>
+      <pubDate>Sat, 08 Sep 2018 00:00:00 +0000</pubDate>
+      <author>quoc.cycle@gmail.com (Quoc Cycle)</author>
+      <guid>http://quoccycle.com/tags/flutter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ios</title>
+      <link>http://quoccycle.com/tags/ios/</link>
+      <pubDate>Sat, 08 Sep 2018 00:00:00 +0000</pubDate>
+      <author>quoc.cycle@gmail.com (Quoc Cycle)</author>
+      <guid>http://quoccycle.com/tags/ios/</guid>
       <description></description>
     </item>
     

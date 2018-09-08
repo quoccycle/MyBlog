@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>quoc.cycle@gmail.com (Quoc Cycle)</managingEditor>
     <webMaster>quoc.cycle@gmail.com (Quoc Cycle)</webMaster>
-    <lastBuildDate>Thu, 06 Sep 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 08 Sep 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://quoccycle.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Series Flutter - Fix lỗi cài đặt Flutter trên Mac OSX với &#34;Oh my zsh!&#34;</title>
+      <link>http://quoccycle.com/2018/09/series-flutter---fix-l%E1%BB%97i-c%C3%A0i-%C4%91%E1%BA%B7t-flutter-tr%C3%AAn-mac-osx-v%E1%BB%9Bi-oh-my-zsh/</link>
+      <pubDate>Sat, 08 Sep 2018 00:00:00 +0000</pubDate>
+      <author>quoc.cycle@gmail.com (Quoc Cycle)</author>
+      <guid>http://quoccycle.com/2018/09/series-flutter---fix-l%E1%BB%97i-c%C3%A0i-%C4%91%E1%BA%B7t-flutter-tr%C3%AAn-mac-osx-v%E1%BB%9Bi-oh-my-zsh/</guid>
+      <description>Xin chào các bạn! Cùng với sự phát triển công nghệ không ngừng thì những thằng DEV như chúng ta đều có tham vọng dùng 1 ngôn ngữ để build đa nền tảng và ngoài cái tên rất hot vừa rồi là React Native của facebook đang làm mưa làm gió thì nay Google cũng tung ra 1 nền tảng mới mang tên Flutter. Không nói vòng vo mình hy vọng chuỗi bài viêt này có thể giúp bạn tiếp cận một cách đơn giản nhất, nhanh nhất với nền tảng mới này!</description>
+    </item>
     
     <item>
       <title>Niềm tin vào cuộc sống sau khi xem xong video này</title>
@@ -18,7 +27,7 @@
       <pubDate>Thu, 06 Sep 2018 00:00:00 +0000</pubDate>
       <author>quoc.cycle@gmail.com (Quoc Cycle)</author>
       <guid>http://quoccycle.com/2018/09/ni%E1%BB%81m-tin-v%C3%A0o-cu%E1%BB%99c-s%E1%BB%91ng-sau-khi-xem-xong-video-n%C3%A0y/</guid>
-      <description>Tình cờ mình dạo chơi thì thấy video này rất hay nên nay share lại cho các bạn! Mình đã xem nó hầu như mỗi ngày vào buổi sáng hoặc lúc hơi thất vọng về cuộc sống mình xem vì nó giúp mình có thể luỵên nghe tiếng anh và điều đặc biệt nhất là nó đã giúp mình cảm thấy yêu đời và có hy vọng vào cuộc sống nhiều hơn!</description>
+      <description>Tình cờ mình dạo chơi thì thấy video này rất hay nên nay share lại cho các bạn! Mình đã xem nó hầu như mỗi ngày vào buổi sáng hoặc lúc hơi thất vọng, mất niềm tin về cuộc sống mình xem vì nó giúp mình có thể luỵên nghe tiếng anh và điều đặc biệt nhất là nó đã giúp mình cảm thấy yêu đời và có hy vọng vào cuộc sống nhiều hơn!</description>
     </item>
     
     <item>

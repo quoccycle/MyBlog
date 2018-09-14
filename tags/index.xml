@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>quoc.cycle@gmail.com (Quoc Cycle)</managingEditor>
     <webMaster>quoc.cycle@gmail.com (Quoc Cycle)</webMaster>
-    <lastBuildDate>Sat, 08 Sep 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 09 Sep 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://quoccycle.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,16 +15,25 @@
     <item>
       <title>Android</title>
       <link>http://quoccycle.com/tags/android/</link>
-      <pubDate>Sat, 08 Sep 2018 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0000</pubDate>
       <author>quoc.cycle@gmail.com (Quoc Cycle)</author>
       <guid>http://quoccycle.com/tags/android/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>Batdau</title>
+      <link>http://quoccycle.com/tags/batdau/</link>
+      <pubDate>Thu, 13 Sep 2018 00:00:00 +0000</pubDate>
+      <author>quoc.cycle@gmail.com (Quoc Cycle)</author>
+      <guid>http://quoccycle.com/tags/batdau/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Beginner</title>
       <link>http://quoccycle.com/tags/beginner/</link>
-      <pubDate>Sat, 08 Sep 2018 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 13 Sep 2018 00:00:00 +0000</pubDate>
       <author>quoc.cycle@gmail.com (Quoc Cycle)</author>
       <guid>http://quoccycle.com/tags/beginner/</guid>
       <description></description>
@@ -42,7 +51,7 @@
     <item>
       <title>Flutter</title>
       <link>http://quoccycle.com/tags/flutter/</link>
-      <pubDate>Sat, 08 Sep 2018 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0000</pubDate>
       <author>quoc.cycle@gmail.com (Quoc Cycle)</author>
       <guid>http://quoccycle.com/tags/flutter/</guid>
       <description></description>
@@ -51,9 +60,18 @@
     <item>
       <title>Ios</title>
       <link>http://quoccycle.com/tags/ios/</link>
-      <pubDate>Sat, 08 Sep 2018 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0000</pubDate>
       <author>quoc.cycle@gmail.com (Quoc Cycle)</author>
       <guid>http://quoccycle.com/tags/ios/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Machinelearning</title>
+      <link>http://quoccycle.com/tags/machinelearning/</link>
+      <pubDate>Thu, 13 Sep 2018 00:00:00 +0000</pubDate>
+      <author>quoc.cycle@gmail.com (Quoc Cycle)</author>
+      <guid>http://quoccycle.com/tags/machinelearning/</guid>
       <description></description>
     </item>
     

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Beginner on Quoc Cycle Blog | The full stack deverloper</title>
-    <link>http://quoccycle.com/tags/beginner/</link>
-    <description>Recent content in Beginner on Quoc Cycle Blog | The full stack deverloper</description>
+    <title>Batdau on Quoc Cycle Blog | The full stack deverloper</title>
+    <link>http://quoccycle.com/tags/batdau/</link>
+    <description>Recent content in Batdau on Quoc Cycle Blog | The full stack deverloper</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>quoc.cycle@gmail.com (Quoc Cycle)</managingEditor>
     <webMaster>quoc.cycle@gmail.com (Quoc Cycle)</webMaster>
     <lastBuildDate>Thu, 13 Sep 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://quoccycle.com/tags/beginner/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://quoccycle.com/tags/batdau/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -21,18 +21,6 @@
       <description>Xác định và giải quyết niềm tin tự giới hạn bản thân và phía cuối con đường là sự tiến bộ Tôi nhận được rất nhiều email từ các developers và các bạn sinh viên muốn bắt đầu học machine learning.
 Câu hỏi đầu tiên tôi hỏi họ là điều gì khiến họ không thể bắt đầu?
 Tôi muốn thử tìm hiểu đến tận cùng những gì mà họ đang cố gắng vật lộn (đấu tranh) và hầu như câu trả lời cuối cùng là họ chèn vào đó một niềm tin tự giới hạn bản thân đã làm gián đoạn sự tiến bộ của họ.</description>
-    </item>
-    
-    <item>
-      <title>Flutter - Nguồn tài nguyên cho người mới bắt đầu học flutter</title>
-      <link>http://quoccycle.com/2018/09/flutter---ngu%E1%BB%93n-t%C3%A0i-nguy%C3%AAn-cho-ng%C6%B0%E1%BB%9Di-m%E1%BB%9Bi-b%E1%BA%AFt-%C4%91%E1%BA%A7u-h%E1%BB%8Dc-flutter/</link>
-      <pubDate>Sun, 09 Sep 2018 00:00:00 +0000</pubDate>
-      <author>quoc.cycle@gmail.com (Quoc Cycle)</author>
-      <guid>http://quoccycle.com/2018/09/flutter---ngu%E1%BB%93n-t%C3%A0i-nguy%C3%AAn-cho-ng%C6%B0%E1%BB%9Di-m%E1%BB%9Bi-b%E1%BA%AFt-%C4%91%E1%BA%A7u-h%E1%BB%8Dc-flutter/</guid>
-      <description>Một ngày chủ nhật đầy nắng!
-Flutter là cái gì? Flutter là một mobile UI technology &amp;amp; SDK from Google nó cho phép bạn build native apps đa nền tảng (Android &amp;amp; iOS) từ codebase được viết bằng Dart.
-Chúng ta bắt đầu học từ đâu? Đây là tài liệu sống mà mình nghĩ mình sẽ cập nhập nó liên tục cho việc học.
-Có rất nhiều cách để ta học.</description>
     </item>
     
   </channel>

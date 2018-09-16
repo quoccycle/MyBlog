@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Top-Down và Bottom-Up hướng tiếp cận nào tốt cho dân lập trình</title>
+  <meta property="og:title" content="Top-Down và Bottom-Up hướng tiếp cận nào tốt cho dân lập trình" />
+  <meta name="twitter:title" content="Top-Down và Bottom-Up hướng tiếp cận nào tốt cho dân lập trình" />
+  <meta name="description" content="Gần đây, mình đọc một bài viết về những hướng tiếp cận để học lập trình, mình đã hiểu được nguyên nhân và điều mà những lập trình viên giỏi học một công nghệ mới hay một ngôn ngữ mới như thế nào là đúng.
+Về cơ bản có 2 phương pháp tiếp cận chung để học lập trình là Top-Down và Bottom-Up, và cả 2 đều có những ưu và nhược điểm riêng.">
+  <meta property="og:description" content="Gần đây, mình đọc một bài viết về những hướng tiếp cận để học lập trình, mình đã hiểu được nguyên nhân và điều mà những lập trình viên giỏi học một công nghệ mới hay một ngôn ngữ mới như thế nào là đúng.
+Về cơ bản có 2 phương pháp tiếp cận chung để học lập trình là Top-Down và Bottom-Up, và cả 2 đều có những ưu và nhược điểm riêng.">
+  <meta name="twitter:description" content="Gần đây, mình đọc một bài viết về những hướng tiếp cận để học lập trình, mình đã hiểu được nguyên nhân và điều mà những lập trình viên giỏi học một công nghệ mới hay một ngôn ngữ mới như thế nào là …">
+  <meta name="author" content="Quoc Cycle"/>
+  <link href='http://quoccycle.com/img/my_logo.png' rel='icon' type='image/x-icon'/>
+  <meta property="og:image" content="http://quoccycle.com/img/my_logo.png" />
+  <meta name="twitter:image" content="http://quoccycle.com/img/my_logo.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@username" />
+  <meta name="twitter:creator" content="@username" />
+  <meta property="og:url" content="http://quoccycle.com/2018/09/top-down-v%C3%A0-bottom-up-h%C6%B0%E1%BB%9Bng-ti%E1%BA%BFp-c%E1%BA%ADn-n%C3%A0o-t%E1%BB%91t-cho-d%C3%A2n-l%E1%BA%ADp-tr%C3%ACnh/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Quoc Cycle Blog | The full stack deverloper" />
+
+  <meta name="generator" content="Hugo 0.47.1" />
+  <link rel="canonical" href="http://quoccycle.com/2018/09/top-down-v%C3%A0-bottom-up-h%C6%B0%E1%BB%9Bng-ti%E1%BA%BFp-c%E1%BA%ADn-n%C3%A0o-t%E1%BB%91t-cho-d%C3%A2n-l%E1%BA%ADp-tr%C3%ACnh/" />
+  <link rel="alternate" href="http://quoccycle.com/index.xml" type="application/rss+xml" title="Quoc Cycle Blog | The full stack deverloper">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="http://quoccycle.com/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="http://quoccycle.com/css/highlight.min.css" /><link rel="stylesheet" href="http://quoccycle.com/css/codeblock.css" />
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-125114904-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://quoccycle.com">Quoc Cycle</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Tags" href="/tags">Tags</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About" href="/page/about/">About</a>
+            </li>
+          
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+          <a title="Quoc Cycle Blog | The full stack deverloper" href="http://quoccycle.com">
+            <img class="avatar-img" src="http://quoccycle.com/img/my_logo.png" alt="Quoc Cycle Blog | The full stack deverloper" />
+          </a>
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+
+    
+  
+  
+  
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              <h1>Top-Down và Bottom-Up hướng tiếp cận nào tốt cho dân lập trình</h1>
+                
+                
+                  <span class="post-meta">
+  
+  
+  <i class="fa fa-calendar-o"></i>&nbsp;Posted on September 15, 2018
+  
+  
+  &nbsp;|&nbsp;
+  <i class="fa fa-clock-o"></i> 7 minutes (1279 words)
+  
+  
+</span>
+
+
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+          
+          <div class="blog-tags">
+            
+              <a href="http://quoccycle.com/tags/phuongphap/">phuongphap</a>&nbsp;
+            
+              <a href="http://quoccycle.com/tags/batdau/">batdau</a>&nbsp;
+            
+              <a href="http://quoccycle.com/tags/beginner/">beginner</a>&nbsp;
+            
+              <a href="http://quoccycle.com/tags/hoclaptrinh/">hoclaptrinh</a>&nbsp;
+            
+          </div>
+        
+        
+        
+
+<p>Gần đây, mình đọc một bài viết về <a href="http://www.programmingforbeginnersbook.com/blog/top-down-bottom-up-approaches-to-learning-programming/">những hướng tiếp cận để học lập trình</a>, mình đã hiểu được nguyên nhân và điều mà những lập trình viên giỏi học một công nghệ mới hay một ngôn ngữ mới như thế nào là đúng.</p>
+
+<p>Về cơ bản có 2 phương pháp tiếp cận chung để học lập trình là <code>Top-Down</code> và <code>Bottom-Up</code>, và cả 2 đều có những ưu và nhược điểm riêng.</p>
+
+<h2 id="hướng-tiếp-cận-top-down">Hướng tiếp cận <code>Top-Down</code></h2>
+
+<p>Với hướng tiếp cận này, mục tiêu chính sẽ là học bằng cách tạo ra những (phần nhỏ của) phần mềm thực sự. Hầu hết những người tự học sẽ hướng mình theo cách tiếp cận này lúc mới bắt đầu học code. Vì đơn giản họ mong muốn mình làm được những thứ hấp dẫn ngay lập tức như một trang web hay một game 2D, 3D&hellip;</p>
+
+<p>Và cách nhanh nhất để làm điều đó là học làm theo một bài tutorial hay một khoá học tạo một ra phần mềm hoặc game hoàn chỉnh, một tutorial được hướng dẫn rất chi tiết. Nếu bạn thực hiện theo các bước chính xác, bạn được đảm bảo sẽ tạo ra một cái gì đó (thú vị với bạn).</p>
+
+<h3 id="ưu-điểm">Ưu điểm</h3>
+
+<p>Điều tốt đẹp mà cách tiếp cận này mang lại là bạn tạo ra một cái gì đó rất nhanh chóng. Cảm giác thật sung sướng khi tạo ra một phần mềm thực sự bằng chính tay bạn trong thời gian ngắn. Bạn có thể bị nghiện cảm giác đó :) , và nó có thể giúp bạn có động lực vượt qua trong quá trình học tập.</p>
+
+<h3 id="nhược-điểm">Nhược điểm</h3>
+
+<p>Vấn đề của cách tiếp cận này đó là nó không dạy bạn những định nghĩa, nguyên tắc cơ bản.</p>
+
+<p>Cuối mỗi tutorial, bạn có thể sẽ không hiểu được là sản phẩm (phần mềm) của bạn hoạt động như thế nào. Thậm chí nếu một tutorial không đủ chi tiết, bạn có thể phải vật lộn để giải quyết vấn đề của nó, khi bạn đi chệch hướng, dù là nhỏ nhất, bạn có thể sẽ không thể hoàn thành nó và không thể chẩn đoán được vấn đề mắc phải. Nó giống như bạn bị ném thẳng ra khúc sông sâu nhất trước khi bạn biết bơi.</p>
+
+<h2 id="hướng-tiếp-cận-bottom-up">Hướng tiếp cận <code>Bottom-Up</code></h2>
+
+<p>Với cách tiếp cận này, mục tiêu sẽ là tìm hiểu tất cả các khái niệm cơ bản về lập trình.</p>
+
+<p>Hướng tiếp cận này phổ biến hơn trong các khóa học lập trình chính thức, giống như trong các trường đại học hoặc cao đẳng. Nó bao gồm việc bắt đầu từ con số không và học một khái niệm tại thời điểm đó. Ý tưởng là để xây dựng một nền tảng vững chắc các kỹ năng lập trình chung, mà có thể được sử dụng để làm bất kỳ loại phần mềm nào.</p>
+
+<h3 id="ưu-điểm-1">Ưu điểm</h3>
+
+<p>Điều tốt đẹp mà hướng tiếp cận này mang lại là bạn sẽ được học các kỹ năng lập trình tổng quát thực sự. Không quan trọng nếu bạn tạo một game 2D 3D hoặc trang web tương tác - khái niệm cơ bản về lập trình có thể áp dụng cho mọi thứ.</p>
+
+<p>Mỗi khái niệm riêng lẻ thì dễ học hơn, vì bạn có thể học nó một cách độc lập. Nếu khóa học bottom-up mà bạn đang thực hiện được cấu trúc tốt, bạn sẽ không bị bắn phá với 1000 khái niệm khác nhau cùng một lúc. Bạn nên làm quen với một khái niệm mới tại một thời điểm, theo thứ tự thì dễ hiểu hơn. Các khái niệm cơ bản được nắm vững (như giá trị và biến), trước khi các khái niệm phức tạp hơn (như các hàm) được xây dựng bên trên.</p>
+
+<h3 id="nhược-điểm-1">Nhược điểm</h3>
+
+<p>Vấn đề của hướng tiếp cận này đó là nó khá chậm. Phải mất một thời gian dài để học tất cả các kỹ năng cần thiết để làm được một cái (phần mềm, chương trình&hellip;) gì đó đáng kể. Bạn phải học những khái niệm cơ bản nhất như biến, lớp, hoặc hàm &hellip; Có thể mất vài tháng, thậm chí vài năm để hoàn thành lịch trình này , và nó có thể vẫn sẽ không đem lại cho bạn tất cả những skill cần thiết để có thể viết một game 2D, 3D hay một trang web ấn tượng.</p>
+
+<p>Và khi nó kéo dài mãi mãi, bạn không tạo ra bất cứ điều gì thú vị, nó có thể trở nên nhàm chán. Và hãy thừa nhận rằng, rất nhiều người thấy rằng việc học <code>control flow</code> trong một tuần không hề thú vị như hoàn thành một trang web trong một ngày. Thứ cảm giác hoàn thành mà nếu bạn không cảm nhận được trong thời gian dài, bạn sẽ ít có khả năng tiếp tục học.</p>
+
+<h2 id="lựa-chọn-nào-là-tốt">Lựa chọn nào là tốt?</h2>
+
+<p>Rõ ràng, không có hướng tiếp cận nào là tốt hơn hoàn toàn so với cái còn lại. Để trở thành một developer lành nghề, bạn phải cần cả 2 hướng <code>Top-Down</code> và <code>Bottom-Up</code>.</p>
+
+<p>Bạn cần trải nghiệm việc tạo ra phần mềm, ngay cả khi bạn không hiểu nó một cách đầy đủ. Bạn cần động lực để tiếp tục học tập, và cảm giác hoàn thành đó có thể giúp ích. Chỉ nghiên cứu về khái niệm và lý thuyết là không đủ để chuẩn bị cho bạn để làm việc về các dự án phần mềm thực sự.</p>
+
+<p>Bạn cũng cần những kỹ năng lập trình cơ bản. Sự cần thiết để có thể hiểu và fix bug code - cả code của bạn, và code được viết bởi các developer khác. Bạn cần phải có khả năng code trong các tình huống mà bạn chưa bao giờ gặp phải trước đây, bởi lẽ sẽ không có tutorial hay sample cho mọi vấn đề mà bạn cần phải giải quyết.</p>
+
+<blockquote>
+<p>Cách tiếp cận tốt nhất là luân phiên giữa hai hướng tiếp cận.</p>
+</blockquote>
+
+<p>Cảm thấy quá tải, giống như bạn không biết code của bạn đang làm gì? Hãy chuyển sang cách tiếp cận <code>Bottom-Up</code>. Trở lại với những vấn đề cơ bản và tìm hiểu chính xác cách mà code của bạn hoạt động. Hãy thử lấp đầy các lỗ hổng trong kiến thức của bạn.</p>
+
+<p>Bắt đầu cảm thấy chán học các khái niệm lập trình trừu tượng? Chuyển ngay sang cách tiếp cận <code>Top-Down</code>. Hãy tạo một cái gì đó nhỏ, giống như một trang web hoặc game đơn giản. Cố gắng thực hiện tất cả các khái niệm mà bạn đã học được, và có được cảm giác hoàn thành sản phẩm.</p>
+
+<p>Cuối cùng hai phương pháp tiếp cận gặp nhau ở giữa. Bạn học được rất nhiều về cách mà code của bạn hoạt động sâu bên dưới, điều này mang lại cho bạn sự tự tin để giải quyết bất kỳ vấn đề nào. Và bạn học cách khái niệm và lý thuyết lập trình áp dụng cho các dự án trong thế giới thực - nơi nào để sử dụng chúng, nơi không sử dụng chúng và cách sử dụng chúng tốt nhất.</p>
+
+<p>Quá trình học tập này không bao giờ kết thúc. Phát triển phần mềm quá phức tạp đến nỗi không một ai hiểu được mọi thứ, có nghĩa là luôn có cái mới để học. Vì vậy, đừng lo lắng quá nhiều về những gì bạn không biết - nó chỉ cần thời gian. Hãy thư giãn và enjoy nó.</p>
+
+<p>Gửi lời cảm ơn chân thành đến <a href="http://www.programmingforbeginnersbook.com/blog/top-down-bottom-up-approaches-to-learning-programming/">bài viết</a>.</p>
+
+
+        
+            <hr/>
+            <section id="social-share">
+              <ul class="list-inline footer-links">
+                
+
+
+<li>
+    <a href="//twitter.com/share?url=http%3a%2f%2fquoccycle.com%2f2018%2f09%2ftop-down-v%25C3%25A0-bottom-up-h%25C6%25B0%25E1%25BB%259Bng-ti%25E1%25BA%25BFp-c%25E1%25BA%25ADn-n%25C3%25A0o-t%25E1%25BB%2591t-cho-d%25C3%25A2n-l%25E1%25BA%25ADp-tr%25C3%25ACnh%2f&amp;text=Top-Down%20v%c3%a0%20Bottom-Up%20h%c6%b0%e1%bb%9bng%20ti%e1%ba%bfp%20c%e1%ba%adn%20n%c3%a0o%20t%e1%bb%91t%20cho%20d%c3%a2n%20l%e1%ba%adp%20tr%c3%acnh&amp;via=username"
+       target="_blank" alt="" title="Share on Twitter">
+        <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+              </span>
+    </a>
+</li>
+
+
+<li>
+    <a href="//plus.google.com/share?url=http%3a%2f%2fquoccycle.com%2f2018%2f09%2ftop-down-v%25C3%25A0-bottom-up-h%25C6%25B0%25E1%25BB%259Bng-ti%25E1%25BA%25BFp-c%25E1%25BA%25ADn-n%25C3%25A0o-t%25E1%25BB%2591t-cho-d%25C3%25A2n-l%25E1%25BA%25ADp-tr%25C3%25ACnh%2f" target="_blank" title="Share on Google Plus">
+         <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
+              </span>
+    </a>
+</li>
+
+
+<li>
+    <a href="//www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fquoccycle.com%2f2018%2f09%2ftop-down-v%25C3%25A0-bottom-up-h%25C6%25B0%25E1%25BB%259Bng-ti%25E1%25BA%25BFp-c%25E1%25BA%25ADn-n%25C3%25A0o-t%25E1%25BB%2591t-cho-d%25C3%25A2n-l%25E1%25BA%25ADp-tr%25C3%25ACnh%2f" target="_blank" title="Share on Facebook">
+        <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+              </span>
+    </a>
+</li>
+
+
+<li>
+    <a href="//reddit.com/submit?url=http%3a%2f%2fquoccycle.com%2f2018%2f09%2ftop-down-v%25C3%25A0-bottom-up-h%25C6%25B0%25E1%25BB%259Bng-ti%25E1%25BA%25BFp-c%25E1%25BA%25ADn-n%25C3%25A0o-t%25E1%25BB%2591t-cho-d%25C3%25A2n-l%25E1%25BA%25ADp-tr%25C3%25ACnh%2f&amp;title=Top-Down%20v%c3%a0%20Bottom-Up%20h%c6%b0%e1%bb%9bng%20ti%e1%ba%bfp%20c%e1%ba%adn%20n%c3%a0o%20t%e1%bb%91t%20cho%20d%c3%a2n%20l%e1%ba%adp%20tr%c3%acnh" target="_blank" title="Share on Reddit">
+         <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-reddit fa-stack-1x fa-inverse"></i>
+              </span>
+    </a>
+</li>
+
+
+<li>
+    <a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2fquoccycle.com%2f2018%2f09%2ftop-down-v%25C3%25A0-bottom-up-h%25C6%25B0%25E1%25BB%259Bng-ti%25E1%25BA%25BFp-c%25E1%25BA%25ADn-n%25C3%25A0o-t%25E1%25BB%2591t-cho-d%25C3%25A2n-l%25E1%25BA%25ADp-tr%25C3%25ACnh%2f&amp;title=Top-Down%20v%c3%a0%20Bottom-Up%20h%c6%b0%e1%bb%9bng%20ti%e1%ba%bfp%20c%e1%ba%adn%20n%c3%a0o%20t%e1%bb%91t%20cho%20d%c3%a2n%20l%e1%ba%adp%20tr%c3%acnh" target="_blank"
+       title="Share on LinkedIn">
+         <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+              </span>
+    </a>
+</li>
+
+
+<li>
+    <a href="//www.pinterest.com/pin/create/button/?url=http%3a%2f%2fquoccycle.com%2f2018%2f09%2ftop-down-v%25C3%25A0-bottom-up-h%25C6%25B0%25E1%25BB%259Bng-ti%25E1%25BA%25BFp-c%25E1%25BA%25ADn-n%25C3%25A0o-t%25E1%25BB%2591t-cho-d%25C3%25A2n-l%25E1%25BA%25ADp-tr%25C3%25ACnh%2f&amp;description=Top-Down%20v%c3%a0%20Bottom-Up%20h%c6%b0%e1%bb%9bng%20ti%e1%ba%bfp%20c%e1%ba%adn%20n%c3%a0o%20t%e1%bb%91t%20cho%20d%c3%a2n%20l%e1%ba%adp%20tr%c3%acnh" target="_blank"
+       title="Share on Pinterest">
+         <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-pinterest fa-stack-1x fa-inverse"></i>
+              </span>
+    </a>
+</li>
+
+              </ul>
+            </section>
+        
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="http://quoccycle.com/2018/09/%C4%91i%E1%BB%81u-g%C3%AC-c%E1%BA%A3n-tr%E1%BB%9F-b%E1%BA%A1n-ti%E1%BA%BFp-c%E1%BA%ADn-v%E1%BB%9Bi-machine-learning/" data-toggle="tooltip" data-placement="top" title="Điều gì cản trở bạn tiếp cận với Machine Learning?">&larr; Previous Post</a>
+            </li>
+          
+          
+            <li class="next">
+              <a href="http://quoccycle.com/2018/09/b%E1%BA%A1n-%C4%91ang-l%C3%A0m-sai-t%E1%BA%A1i-sao-h%E1%BB%8Dc-machine-learning-kh%C3%B4ng-kh%C3%B3/" data-toggle="tooltip" data-placement="top" title="Bạn đang làm sai! Tại sao học Machine Learning không khó?">Next Post &rarr;</a>
+            </li>
+          
+        </ul>
+      
+
+
+      
+        
+          <div class="disqus-comments">
+            <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "http-quoccycle-com" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+          </div>
+        
+        
+      
+
+    </div>
+  </div>
+</div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="mailto:quoc.cycle@gmail.com" title="Email me">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/quocdev" title="Facebook">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://plus.google.com/&#43;username" title="Google&#43;">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/username" title="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/username" title="Twitter">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://linkedin.com/in/username" title="LinkedIn">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://stackoverflow.com/users/XXXXXXX/username" title="StackOverflow">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-stack-overflow fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          Copyright © 2018 <a href="http://quoccycle.com">Quoc Cycle</a>. All rights reserved.
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="http://gohugo.io">Hugo v0.47.1</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js" integrity="sha384-dq1/gEHSxPZQ7DdrM82ID4YVol9BYyU7GbWlIwnwyPzotpoc57wDw/guX8EaYGPx" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="http://quoccycle.com/js/main.js"></script>
+<script src="http://quoccycle.com/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> $(document).ready(function() {$("pre.chroma").css("padding","0");}); </script><script> renderMathInElement(document.body); </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" integrity="sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" crossorigin="anonymous"></script>
+<script src="http://quoccycle.com/js/load-photoswipe.js"></script>
+
+
+
+
+
+
+  </body>
+</html>
+

@@ -7,10 +7,31 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>quoc.cycle@gmail.com (Quoc Cycle)</managingEditor>
     <webMaster>quoc.cycle@gmail.com (Quoc Cycle)</webMaster>
-    <lastBuildDate>Thu, 13 Sep 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 16 Sep 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://quoccycle.com/tags/beginner/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Bạn đang làm sai! Tại sao học Machine Learning không khó?</title>
+      <link>http://quoccycle.com/2018/09/b%E1%BA%A1n-%C4%91ang-l%C3%A0m-sai-t%E1%BA%A1i-sao-h%E1%BB%8Dc-machine-learning-kh%C3%B4ng-kh%C3%B3/</link>
+      <pubDate>Sun, 16 Sep 2018 00:00:00 +0000</pubDate>
+      <author>quoc.cycle@gmail.com (Quoc Cycle)</author>
+      <guid>http://quoccycle.com/2018/09/b%E1%BA%A1n-%C4%91ang-l%C3%A0m-sai-t%E1%BA%A1i-sao-h%E1%BB%8Dc-machine-learning-kh%C3%B4ng-kh%C3%B3/</guid>
+      <description>Trong bài viết này mình có sử dụng 2 thuật ngữ là Bottom-Up và Top-Down nếu bạn chưa biết thì hãy vào đây.
+ Các chủ đề về kỹ thuật như toán học, vật lý và thậm chí ngành khoa học máy tính được dạy bằng cách áp dụng phương pháp tiếp cận Bottom-Up.
+Vấn đề là, con người chứ không phải là 1 robot thực hiện một chương trình học tập đã lên sẵn.</description>
+    </item>
+    
+    <item>
+      <title>Top-Down và Bottom-Up hướng tiếp cận nào tốt cho dân lập trình</title>
+      <link>http://quoccycle.com/2018/09/top-down-v%C3%A0-bottom-up-h%C6%B0%E1%BB%9Bng-ti%E1%BA%BFp-c%E1%BA%ADn-n%C3%A0o-t%E1%BB%91t-cho-d%C3%A2n-l%E1%BA%ADp-tr%C3%ACnh/</link>
+      <pubDate>Sat, 15 Sep 2018 00:00:00 +0000</pubDate>
+      <author>quoc.cycle@gmail.com (Quoc Cycle)</author>
+      <guid>http://quoccycle.com/2018/09/top-down-v%C3%A0-bottom-up-h%C6%B0%E1%BB%9Bng-ti%E1%BA%BFp-c%E1%BA%ADn-n%C3%A0o-t%E1%BB%91t-cho-d%C3%A2n-l%E1%BA%ADp-tr%C3%ACnh/</guid>
+      <description>Gần đây, mình đọc một bài viết về những hướng tiếp cận để học lập trình, mình đã hiểu được nguyên nhân và điều mà những lập trình viên giỏi học một công nghệ mới hay một ngôn ngữ mới như thế nào là đúng.
+Về cơ bản có 2 phương pháp tiếp cận chung để học lập trình là Top-Down và Bottom-Up, và cả 2 đều có những ưu và nhược điểm riêng.</description>
+    </item>
     
     <item>
       <title>Điều gì cản trở bạn tiếp cận với Machine Learning?</title>

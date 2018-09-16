@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://quoccycle.com/2018/09/b%E1%BA%A1n-%C4%91ang-l%C3%A0m-sai-t%E1%BA%A1i-sao-h%E1%BB%8Dc-machine-learning-kh%C3%B4ng-kh%C3%B3/</loc>
+    <lastmod>2018-09-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://quoccycle.com/2018/09/top-down-v%C3%A0-bottom-up-h%C6%B0%E1%BB%9Bng-ti%E1%BA%BFp-c%E1%BA%ADn-n%C3%A0o-t%E1%BB%91t-cho-d%C3%A2n-l%E1%BA%ADp-tr%C3%ACnh/</loc>
+    <lastmod>2018-09-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://quoccycle.com/2018/09/%C4%91i%E1%BB%81u-g%C3%AC-c%E1%BA%A3n-tr%E1%BB%9F-b%E1%BA%A1n-ti%E1%BA%BFp-c%E1%BA%ADn-v%E1%BB%9Bi-machine-learning/</loc>
     <lastmod>2018-09-13T00:00:00+00:00</lastmod>
   </url>
@@ -39,13 +49,13 @@
   
   <url>
     <loc>http://quoccycle.com/tags/batdau/</loc>
-    <lastmod>2018-09-13T00:00:00+00:00</lastmod>
+    <lastmod>2018-09-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://quoccycle.com/tags/beginner/</loc>
-    <lastmod>2018-09-13T00:00:00+00:00</lastmod>
+    <lastmod>2018-09-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -67,6 +77,12 @@
   </url>
   
   <url>
+    <loc>http://quoccycle.com/tags/hoclaptrinh/</loc>
+    <lastmod>2018-09-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://quoccycle.com/tags/ios/</loc>
     <lastmod>2018-09-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -74,7 +90,7 @@
   
   <url>
     <loc>http://quoccycle.com/tags/machinelearning/</loc>
-    <lastmod>2018-09-13T00:00:00+00:00</lastmod>
+    <lastmod>2018-09-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -96,8 +112,14 @@
   </url>
   
   <url>
+    <loc>http://quoccycle.com/tags/phuongphap/</loc>
+    <lastmod>2018-09-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://quoccycle.com/post/</loc>
-    <lastmod>2018-09-13T00:00:00+00:00</lastmod>
+    <lastmod>2018-09-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -107,7 +129,7 @@
   
   <url>
     <loc>http://quoccycle.com/</loc>
-    <lastmod>2018-09-13T00:00:00+00:00</lastmod>
+    <lastmod>2018-09-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

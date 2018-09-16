@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Phuongphap on Quoc Cycle Blog | The full stack deverloper</title>
+    <link>http://quoccycle.com/tags/phuongphap/</link>
+    <description>Recent content in Phuongphap on Quoc Cycle Blog | The full stack deverloper</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>quoc.cycle@gmail.com (Quoc Cycle)</managingEditor>
+    <webMaster>quoc.cycle@gmail.com (Quoc Cycle)</webMaster>
+    <lastBuildDate>Sat, 15 Sep 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://quoccycle.com/tags/phuongphap/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Top-Down và Bottom-Up hướng tiếp cận nào tốt cho dân lập trình</title>
+      <link>http://quoccycle.com/2018/09/top-down-v%C3%A0-bottom-up-h%C6%B0%E1%BB%9Bng-ti%E1%BA%BFp-c%E1%BA%ADn-n%C3%A0o-t%E1%BB%91t-cho-d%C3%A2n-l%E1%BA%ADp-tr%C3%ACnh/</link>
+      <pubDate>Sat, 15 Sep 2018 00:00:00 +0000</pubDate>
+      <author>quoc.cycle@gmail.com (Quoc Cycle)</author>
+      <guid>http://quoccycle.com/2018/09/top-down-v%C3%A0-bottom-up-h%C6%B0%E1%BB%9Bng-ti%E1%BA%BFp-c%E1%BA%ADn-n%C3%A0o-t%E1%BB%91t-cho-d%C3%A2n-l%E1%BA%ADp-tr%C3%ACnh/</guid>
+      <description>Gần đây, mình đọc một bài viết về những hướng tiếp cận để học lập trình, mình đã hiểu được nguyên nhân và điều mà những lập trình viên giỏi học một công nghệ mới hay một ngôn ngữ mới như thế nào là đúng.
+Về cơ bản có 2 phương pháp tiếp cận chung để học lập trình là Top-Down và Bottom-Up, và cả 2 đều có những ưu và nhược điểm riêng.</description>
+    </item>
+    
+  </channel>
+</rss>
